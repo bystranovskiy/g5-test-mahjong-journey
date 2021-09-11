@@ -1,0 +1,63 @@
+.section-features {
+  @include rounding;
+  @include bgset;
+
+  padding: 40px 0 80px;
+
+  @include media-breakpoint-up(xl) {
+    padding: 55px 0 134px;
+  }
+
+  .features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      display: flex;
+      align-items: center;
+      padding: 16px 0;
+
+      .icon {
+        display: inline-block;
+        width: 90px;
+
+        @include media-breakpoint-up(md) {
+          width: 128px;
+        }
+
+        &_img {
+          margin: 0 auto;
+        }
+      }
+
+      .content {
+        display: inline-block;
+        font-weight: 500;
+        line-height: 1.6;
+        width: calc(100% - 128px);
+
+        @include media-breakpoint-up(md) {
+          width: calc(100% - 90px);
+        }
+      }
+
+    }
+  }
+
+  .smiling-cat {
+    &_img {
+      filter: drop-shadow(5px 10px 30px rgba(69, 44, 31, .4));
+
+      max-width: 166px;
+
+      @include media-breakpoint-up(md) {
+        max-width: 244px;
+      }
+
+      @include media-breakpoint-up(xl) {
+        max-width: 100%;
+      }
+    }
+  }
+}

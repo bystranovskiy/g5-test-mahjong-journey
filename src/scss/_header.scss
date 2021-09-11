@@ -1,0 +1,131 @@
+header {
+  max-width: $main_width;
+  position: relative;
+  @include bgset;
+  background-position: top center;
+
+  padding: 20px 0 50px;
+
+  @include media-breakpoint-up(md) {
+    background-attachment: fixed;
+    background-size: 100% auto;
+    padding: 40px 0 72px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    background-size: $main_width auto;
+    padding: 62px 0 72px;
+  }
+
+  .mahjong-logo {
+    margin-bottom: 190px;
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: 112px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 100px;
+    }
+
+    &_img {
+      margin: 0 auto;
+      filter: drop-shadow(0 4px 10px rgba(23, 15, 10, .24));
+
+      max-width: 170px;
+
+      @include media-breakpoint-up(md) {
+        max-width: 268px;
+      }
+
+      @include media-breakpoint-up(xl) {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .eva-thinking {
+    position: absolute;
+    left: 50%;
+    bottom: 26px;
+
+    transform: translateX(calc(-50% - 78px));
+
+    @include media-breakpoint-up(md) {
+      transform: translateX(calc(-50% - 246px));
+    }
+
+    @include media-breakpoint-up(xl) {
+      transform: translateX(calc(-50% - 451px));
+    }
+
+    &_img {
+      filter: drop-shadow(0 4px 40px rgba(0, 0, 0, .6));
+
+      max-width: 225px;
+
+      @include media-breakpoint-up(md) {
+        max-width: 259px;
+      }
+
+      @include media-breakpoint-up(xl) {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .mj-tiles {
+    position: absolute;
+    right: 50%;
+    bottom: 130px;
+
+    transform: translateX(calc(50% + 65px));
+
+    @include media-breakpoint-up(md) {
+      transform: translateX(calc(50% + 232px));
+    }
+
+    @include media-breakpoint-up(xl) {
+      transform: translateX(calc(50% + 475px));
+    }
+
+    &_img {
+      filter: drop-shadow(0 4px 16px #170f0a);
+
+      max-width: 233px;
+
+      @include media-breakpoint-up(md) {
+        max-width: 303px;
+      }
+
+      @include media-breakpoint-up(xl) {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .btn-play {
+    position: relative;
+
+    margin: 190px auto 22px;
+
+    @include media-breakpoint-up(md) {
+      margin: 112px auto 38px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      margin: 100px auto 114px;
+    }
+
+  }
+
+  .slogan {
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    text-shadow: 0 2px 2px #000;
+  }
+
+}
+
+

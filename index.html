@@ -1,0 +1,596 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Mahjong Journey Game</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+    <link rel="apple-touch-icon" sizes="57x57" href="src/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="src/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="src/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="src/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="src/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="src/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="src/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="src/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="src/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="src/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="src/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="src/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="src/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="src/img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="src/img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="robots" content="all"/>
+    <meta property="og:image" content="src/img/logo@x2-min.png"/>
+    <meta property="og:site_name" content="Mahjong Journey Game"/>
+    <meta property="og:type" content="game"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="src/fonts/fontello/css/fontello.css"/>
+    <link rel="stylesheet" type="text/css" href="build/style.css"/>
+</head>
+<body>
+<style>
+    @-webkit-keyframes swing {
+        15% {
+            -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+        }
+        30% {
+            -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+        }
+        50% {
+            -webkit-transform: translateX(3px);
+            transform: translateX(3px);
+        }
+        65% {
+            -webkit-transform: translateX(-3px);
+            transform: translateX(-3px);
+        }
+        80% {
+            -webkit-transform: translateX(2px);
+            transform: translateX(2px);
+        }
+        100% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes swing {
+        15% {
+            -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+        }
+        30% {
+            -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+        }
+        50% {
+            -webkit-transform: translateX(3px);
+            transform: translateX(3px);
+        }
+        65% {
+            -webkit-transform: translateX(-3px);
+            transform: translateX(-3px);
+        }
+        80% {
+            -webkit-transform: translateX(2px);
+            transform: translateX(2px);
+        }
+        100% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+        }
+    }
+
+    .preloader {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        background: #fff;
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        font-weight: 500;
+        font-size: 20px;
+        letter-spacing: 5px;
+        text-indent: 20px;
+    }
+
+    .preloader img {
+        margin: 0 auto 15px;
+        display: block;
+        -webkit-animation: swing 1s infinite;
+        animation: swing 1s infinite;
+    }
+</style>
+<div class="preloader">
+    <img src="src/img/favicon/apple-icon-144x144.png">
+    <strong>Loading...</strong>
+</div>
+<header class="mx-auto lazy"
+        data-src="src/img/section-header-bg-min.jpg"
+        data-retina="src/img/section-header-bg@x2-min.jpg">
+    <div class="section-header_inner">
+        <div class="mj-tiles">
+            <img alt="MJ tiles"
+                 class="mj-tiles_img d-block lazy"
+                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                 data-src="src/img/mj_tiles-min.png"
+                 data-retina="src/img/mj_tiles@x2-min.png"
+                 width="394"
+                 height="284"
+                 data-g5="light-speed-in-right"
+                 data-g5-delay="500"
+                 data-g5-duration="800"
+            >
+        </div>
+        <div class="eva-thinking">
+            <img alt="Eva thinking"
+                 class="eva-thinking_img d-block lazy"
+                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                 data-src="src/img/eva_thinking-min.png"
+                 data-retina="src/img/eva_thinking@x2-min.png"
+                 width="362" height="531"
+                 data-g5="light-speed-in-left"
+                 data-g5-delay="500"
+                 data-g5-duration="800"
+            >
+        </div>
+        <div class="mahjong-logo">
+            <img alt="Mahjong Journey Game Logo"
+                 class="mahjong-logo_img lazy"
+                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                 data-src="src/img/logo-min.png"
+                 data-retina="src/img/logo@x2-min.png"
+                 width="409"
+                 height="193"
+                 data-g5="bounce-in-down"
+                 data-g5-delay="500"
+            >
+        </div>
+        <div class="btn-play_wrapper"
+             data-g5="bounce-in"
+             data-g5-delay="1400"
+        >
+            <div class="btn-play mx-auto lazy"
+                 data-src="src/img/btn-bg-min.png"
+                 data-retina="src/img/btn-bg@x2-min.png"
+            >
+                <div class="btn-play_hover lazy"
+                     data-src="src/img/btn-bg-min.png"
+                     data-retina="src/img/btn-bg@x2-min.png">
+                </div>
+                <span>Play Now</span>
+            </div>
+        </div>
+        <h1 class="slogan text-center mt-3"
+            data-g5="bounce-in-up"
+            data-g5-delay="500"
+        >Match Tiles & Relax</h1>
+    </div>
+</header>
+<main class="mx-auto">
+    <section class="section-video lazy"
+             data-src="src/img/section-texture-bg-min.png"
+             data-retina="src/img/section-texture-bg@x2-min.png">
+        <div class="container">
+            <p
+                    data-g5="bounce-in-up"
+                    data-g5-delay="1800"
+
+            >Enjoy a new take on Mahjong Solitaire as you help a young girl and her cat traverse the globe in search
+                of her lost parents.</p>
+            <div class="wooden-stand lazy"
+                 data-src="src/img/wooden-stand-min.png"
+                 data-retina="src/img/wooden-stand@x2-min.png"
+                 data-g5="bounce-in-up"
+                 data-g5-delay="2000"
+            >
+                <div class="wooden-stand_inner"
+                     data-g5="bounce-in"
+                     data-g5-delay="2800"
+                >
+                    <iframe class="lazy"
+                            data-loader="youtube"
+                            data-src="K5JQtjIc6ZY"
+                            width="560"
+                            height="315"
+                    ></iframe>
+                </div>
+                <div class="baloon">
+                    <img alt="Baloon"
+                         class="baloon_img lazy"
+                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                         data-src="src/img/baloon-min.png"
+                         data-retina="src/img/baloon@x2-min.png"
+                         width="167"
+                         height="291"
+                         data-g5="bounce-in-up"
+                         data-g5-delay="600"
+                    >
+                </div>
+                <div class="baloon2">
+                    <img alt="Baloon cat 1"
+                         class="baloon2_img__01 lazy"
+                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                         data-src="src/img/baloon3-min.png"
+                         data-retina="src/img/baloon3@x2-min.png"
+                         width="100"
+                         height="174"
+                         data-g5="bounce-in-up"
+                         data-g5-delay="800"
+                    >
+                    <img alt="Baloon cat 2"
+                         class="baloon2_img__02 lazy"
+                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                         data-src="src/img/baloon2-min.png"
+                         data-retina="src/img/baloon2@x2-min.png"
+                         width="138"
+                         height="234"
+                         data-g5="bounce-in-up"
+                         data-g5-delay="700"
+                    >
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-experience lazy"
+             data-src="src/img/section-experience-bg-min.jpg"
+             data-retina="src/img/section-experience-bg@x2-min.jpg">
+        <div class="cloud2">
+            <img alt="Cloud 2"
+                 class="cloud2_img lazy"
+                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                 data-src="src/img/cloud2-min.png"
+                 data-retina="src/img/cloud2@x2-min.png"
+                 width="332"
+                 height="158"
+                 data-g5="light-speed-in-right"
+                 data-g5-delay="500"
+            >
+        </div>
+        <div class="container position-relative">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="screen"
+                         data-g5="bounce-in"
+                    >
+                        <img alt="Game screen"
+                             class="screen_img lazy"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                             data-src="src/img/screen-min.jpg"
+                             data-retina="src/img/screen@x2-min.jpg"
+                             width="634"
+                             height="380">
+                    </div>
+                </div>
+                <div class="col-lg-5"
+                     data-g5="bounce-in-up"
+                >
+                    <img alt="Mahjong"
+                         class="mahjong_img d-block mx-auto my-2 lazy"
+                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                         data-src="src/img/mahjong-min.jpg"
+                         data-retina="src/img/mahjong@x2-min.jpg"
+                         width="120"
+                         height="120">
+                    <h2 class="title">Mahjong Journey</h2>
+                    <div class="content">
+                        <p>Experience a new take<br/> on Mahjong Solitaire</p>
+                    </div>
+                    <div class="btn-play btn-play__medium mx-auto lazy"
+                         data-src="src/img/btn-bg-min.png"
+                         data-retina="src/img/btn-bg@x2-min.png">
+                        <div class="btn-play_hover lazy"
+                             data-src="src/img/btn-bg-min.png"
+                             data-retina="src/img/btn-bg@x2-min.png">
+
+                        </div>
+                        <span>Play Now</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cloud">
+            <img alt="Cloud"
+                 class="cloud_img lazy"
+                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                 data-src="src/img/cloud-min.png"
+                 data-retina="src/img/cloud@x2-min.png"
+                 width="237"
+                 height="147"
+                 data-g5="light-speed-in-left"
+                 data-g5-delay="700"
+            >
+        </div>
+    </section>
+    <section class="section-reviews">
+        <div class="container">
+            <div class="reviews-slider"
+                 data-g5="bounce-in"
+            >
+                <div class="reviews-item">
+                    <div class="avatar">
+                        <img alt="User avatar"
+                             class="avatar_img"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                             data-lazy="src/img/review-avatar-user-1@x2-min.png"
+                             width="160"
+                             height="160">
+                    </div>
+                    <div class="content">
+                        <div class="rating">
+                            <img alt="Rating star"
+                                 class="rating_img"
+                                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                 data-lazy="src/img/star.svg"
+                                 width="49" height="47">
+                            <img alt="Rating star"
+                                 class="rating_img"
+                                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                 data-lazy="src/img/star.svg"
+                                 width="49" height="47">
+                            <img alt="Rating star"
+                                 class="rating_img"
+                                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                 data-lazy="src/img/star.svg"
+                                 width="49" height="47">
+                            <img alt="Rating star"
+                                 class="rating_img"
+                                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                 data-lazy="src/img/star.svg"
+                                 width="49" height="47">
+                            <img alt="Rating star"
+                                 class="rating_img"
+                                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                 data-lazy="src/img/star.svg"
+                                 width="49" height="47">
+                        </div>
+                        <div class="name">Ad****a</div>
+                    </div>
+                    <div class="review">"I really like this game.. the graphics and visual arts are amazing!”</div>
+                </div>
+                <div class="reviews-item">
+                    <div class="avatar">
+                        <img alt="User avatar"
+                             class="avatar_img"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                             data-lazy="src/img/review-avatar-user-1@x2-min.png"
+                             width="160"
+                             height="160">
+                    </div>
+                    <div class="content">
+                        <div class="rating">
+                            <img alt="Rating star"
+                                 class="rating_img"
+                                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                 data-lazy="src/img/star.svg"
+                                 width="49" height="47">
+                            <img alt="Rating star"
+                                 class="rating_img"
+                                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                 data-lazy="src/img/star.svg"
+                                 width="49" height="47">
+                            <img alt="Rating star"
+                                 class="rating_img"
+                                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                 data-lazy="src/img/star.svg"
+                                 width="49" height="47">
+                            <img alt="Rating star disabled"
+                                 class="rating_img"
+                                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                 data-lazy="src/img/star-disabled.svg"
+                                 width="49" height="47">
+                            <img alt="Rating star disabled"
+                                 class="rating_img"
+                                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                 data-lazy="src/img/star-disabled.svg"
+                                 width="49" height="47">
+                        </div>
+                        <div class="name">Ad****a</div>
+                    </div>
+                    <div class="review">"I really like this game.. the graphics and visual arts are amazing!”</div>
+                </div>
+                <div class="reviews-item">
+                    <div class="avatar">
+                        <img alt="User avatar"
+                             class="avatar_img"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                             data-lazy="src/img/review-avatar-user-1@x2-min.png"
+                             width="160"
+                             height="160">
+                    </div>
+                    <div class="content">
+                        <div class="rating">
+                            <img alt="Rating star"
+                                 class="rating_img"
+                                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                 data-lazy="src/img/star.svg"
+                                 width="49" height="47">
+                            <img alt="Rating star"
+                                 class="rating_img"
+                                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                 data-lazy="src/img/star.svg"
+                                 width="49" height="47">
+                            <img alt="Rating star disabled"
+                                 class="rating_img"
+                                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                 data-lazy="src/img/star-disabled.svg"
+                                 width="49" height="47">
+                            <img alt="Rating star disabled"
+                                 class="rating_img"
+                                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                 data-lazy="src/img/star-disabled.svg"
+                                 width="49" height="47">
+                            <img alt="Rating star disabled"
+                                 class="rating_img"
+                                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                 data-lazy="src/img/star-disabled.svg"
+                                 width="49" height="47">
+                        </div>
+                        <div class="name">Ad****a</div>
+                    </div>
+                    <div class="review">"I really like this game.. the graphics and visual arts are amazing!”</div>
+                </div>
+
+            </div>
+        </div>
+        <div class="hourglass">
+            <img alt="Hourglass"
+                 class="hourglass_img lazy"
+                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                 data-src="src/img/hourglass-min.png"
+                 data-retina="src/img/hourglass@x2-min.png"
+                 width="168"
+                 height="178"
+                 data-g5="light-speed-in-left">
+        </div>
+    </section>
+    <section class="section-features lazy"
+             data-src="src/img/section-texture-bg-min.png"
+             data-retina="src/img/section-texture-bg@x2-min.png">
+        <div class="container">
+            <h2 class="text-center text-uppercase"
+                data-g5="bounce-in"
+            >Game Features</h2>
+            <div class="row">
+                <div class="col-lg-7">
+                    <ul class="features-list">
+                        <li data-g5="light-speed-in-left">
+                            <span class="icon">
+                                <img alt="icon heart"
+                                     class="icon_img lazy"
+                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                     data-src="src/img/icon-heart-min.png" data-retina="src/img/icon-heart@x2-min.png"
+                                     width="59"
+                                     height="58">
+                            </span>
+                            <span class="content">Play this new take on Mahjong Solitare and help a young girl find her lost parents.</span>
+                        </li>
+                        <li data-g5="light-speed-in-left">
+                            <span class="icon">
+                                <img alt="icon babyu"
+                                     class="icon_img lazy"
+                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                     data-src="src/img/icon-babyu-min.png"
+                                     data-retina="src/img/icon-babyu@x2-min.png"
+                                     width="65"
+                                     height="58">
+                            </span>
+                            <span class="content">Master thousands of immersive levels by matching over 1800 types of tiles in 43 different tilesets.</span>
+                        </li>
+                        <li data-g5="light-speed-in-left">
+                            <span class="icon">
+                                <img alt="icon eye"
+                                     class="icon_img lazy"
+                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                     data-src="src/img/icon-eye-min.png"
+                                     data-retina="src/img/icon-eye@x2-min.png"
+                                     width="65"
+                                     height="51">
+                            </span>
+                            <span class="content">Use the four groundbreaking powerups to earn collectibles and display them as you restore the family home.</span>
+                        </li>
+                        <li data-g5="light-speed-in-left">
+                            <span class="icon">
+                                <img alt="icon rocket"
+                                     class="icon_img lazy"
+                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                     data-src="src/img/icon-rocket-min.png"
+                                     data-retina="src/img/icon-rocket@x2-min.png"
+                                     width="63"
+                                     height="67">
+                            </span>
+                            <span class="content">Enjoy gorgeous graphics and rich sounds as you travel around the world.</span>
+                        </li>
+                        <li data-g5="light-speed-in-left">
+                            <span class="icon">
+                                <img alt="icon clock" class="icon_img lazy"
+                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                     data-src="src/img/icon-clock-min.png"
+                                     data-retina="src/img/icon-clock@x2-min.png"
+                                     width="50"
+                                     height="51">
+                            </span>
+                            <span class="content">Enjoy regular free updates with new levels, tilesets and more.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-5">
+                    <span class="smiling-cat">
+                        <img alt="smiling cat"
+                             class="smiling-cat_img mx-auto lazy"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                             data-src="src/img/smiling-cat-min.png"
+                             data-retina="src/img/smiling-cat@x2-min.png"
+                             width="269"
+                             height="430"
+                             data-g5="light-speed-in-right"
+                        >
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+<footer class="mx-auto lazy" data-src="src/img/footer-bg-min.jpg"
+        data-retina="src/img/footer-bg@x2-min.jpg">
+    <div class="container position-relative">
+        <div class="row">
+            <div class="col-md-6 col-lg-5 col-xl-4">
+                <h2 class="title"
+                    data-g5="bounce-in-up"
+                >Stay with us</h2>
+                <p data-g5="bounce-in-up">Mahjong Journey is constantly evolving. Become part of our community and
+                    follow us on:</p>
+                <ul class="social"
+                    data-g5="bounce-in">
+                    <li><a href="#" target="_blank" class="icon-facebook">&#xe801;</a></li>
+                    <li><a href="#" target="_blank" class="icon-twitter">&#xe802;</a></li>
+                    <li><a href="#" target="_blank" class="icon-youtube">&#xe803;</a></li>
+                    <li><a href="#" target="_blank" class="icon-instagram">&#xe804;</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <span>G5 ENTERTAINMENT ®</span>
+            <span>©2021 G5 Entertainment AB</span>
+        </div>
+        <ul class="footer-menu">
+            <li><a href="#" target="_blank">Terms of Service</a></li>
+            <li><a href="#" target="_blank">Privacy Policy</a></li>
+            <li><a href="#" target="_blank">G5 Store Terms of Service</a></li>
+        </ul>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous">
+</script>
+<script type="text/javascript"
+        src="src/js/custom/g5.js"></script>
+<script type="text/javascript"
+        src="build/bundle.js">
+</script>
+</body>
+</html>

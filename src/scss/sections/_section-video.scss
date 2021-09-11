@@ -1,0 +1,142 @@
+.section-video {
+  @include rounding;
+  @include bgset;
+  background-color: $main_bg;
+  text-align: center;
+  font-weight: 500;
+  line-height: 1.6;
+
+  padding: 10px 0 40px;
+  font-size: 18px;
+
+  @include media-breakpoint-up(md) {
+    padding: 20px 0 40px;
+    font-size: 20px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    padding: 31px 0 40px;
+    font-size: 28px;
+  }
+
+  .wooden-stand {
+    position: relative;
+    @include bgset;
+
+    max-width: 270px;
+    margin: 20px auto 72px;
+
+    @include media-breakpoint-up(md) {
+      max-width: 524px;
+      margin: 22px auto 72px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      max-width: 878px;
+      margin: 54px auto 72px;
+    }
+
+    .wooden-stand_inner {
+      padding-top: 60%;
+    }
+
+    iframe {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 83.5%;
+      height: 79%;
+      margin: -9px 0 0px 0;
+      border: 0;
+    }
+
+    .baloon {
+      position: absolute;
+      top: 50%;
+
+      transform: translateY(-74%);
+      left: -20px;
+
+      @include media-breakpoint-up(md) {
+        transform: translateY(-78%);
+        left: -66px;
+      }
+
+      @include media-breakpoint-up(xl) {
+        transform: translateY(-81%);
+        left: -114px;
+      }
+
+      &_img {
+        filter: drop-shadow(0 4px 16px rgba(69, 44, 31, .64));
+
+        max-width: 50px;
+
+        @include media-breakpoint-up(md) {
+          max-width: 102px;
+        }
+
+        @include media-breakpoint-up(xl) {
+          max-width: 100%;
+        }
+      }
+    }
+
+    .baloon2 {
+      position: absolute;
+      top: 50%;
+
+      transform: translateY(27%);
+      right: -6px;
+
+      @include media-breakpoint-up(md) {
+        transform: translateY(22%);
+        right: -24px;
+      }
+
+      @include media-breakpoint-up(xl) {
+        transform: translateY(17%);
+        right: -85px;
+      }
+
+      &_img {
+        &__01 {
+          position: absolute;
+          filter: drop-shadow(0 4px 8px rgba(69, 44, 31, .64));
+
+          top: 29%;
+          left: 62%;
+          max-width: 29px;
+
+          @include media-breakpoint-up(md) {
+            top: 29%;
+            left: 62%;
+            max-width: 61px;
+          }
+
+          @include media-breakpoint-up(xl) {
+            top: 29%;
+            left: 62%;
+            max-width: 100%;
+          }
+        }
+
+        &__02 {
+          position: relative;
+          filter: drop-shadow(0 4px 8px rgba(69, 44, 31, .64));
+
+          max-width: 41px;
+
+          @include media-breakpoint-up(md) {
+            max-width: 85px;
+          }
+
+          @include media-breakpoint-up(xl) {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
