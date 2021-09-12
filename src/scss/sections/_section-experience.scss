@@ -1,10 +1,9 @@
 .section-experience {
-  @include bgset(section-experience-bg);
   @include rounding;
   text-align: center;
   font-weight: 500;
+  overflow: hidden;
 
-  background-position: top center;
   padding: 78px 0 120px;
   font-size: 1.111rem;
 
@@ -12,35 +11,63 @@
     padding: 40px 0 100px;
   }
 
-  @include media-breakpoint-up(lg) {
-    background-position: center 36%;
-  }
-
   @include media-breakpoint-up(xl) {
     padding: 80px 0 148px;
     font-size: 1.333rem;
   }
 
+  .parallax_bg {
+    @include bgset(section-experience-bg);
+    @include abs;
+
+    height: 120%;
+    background-position: center;
+    background-size: cover;
+
+    @include media-breakpoint-up(lg) {
+      background-position: center 36%;
+    }
+  }
+
   .cloud {
     position: absolute;
-    top: -23px;
-    left: 20px;
+    top: 0;
+    left: 10px;
 
     @include media-breakpoint-up(md) {
+      top: 30px;
+      left: 20px
+    }
+
+    @include media-breakpoint-up(xl) {
       top: 50px;
       left: 40px
     }
 
+    &_img {
+      max-width: 170px;
+      @include media-breakpoint-up(md) {
+        max-width: 100%;
+      }
+    }
+
   }
 
-  .cloud2 {
+  .cloud-2 {
     position: absolute;
-    top: -23px;
-    right: 20px;
+    top: 0;
+    right: -10px;
 
     @include media-breakpoint-up(md) {
       top: 50px;
       right: 40px;
+    }
+
+    &_img {
+      max-width: 170px;
+      @include media-breakpoint-up(md) {
+        max-width: 100%;
+      }
     }
   }
 

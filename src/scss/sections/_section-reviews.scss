@@ -115,7 +115,6 @@
       padding: 0;
       cursor: pointer;
       border: 0;
-      transition: .3s;
       position: absolute;
       z-index: 1;
       top: 36px;
@@ -131,6 +130,7 @@
         color: #FFBF0B;
         text-shadow: 0 4px 4px rgba(69, 44, 31, .22);
         transition: .3s;
+        display: inline-block;
 
         font-size: 44px;
 
@@ -153,9 +153,7 @@
         }
 
         &:active {
-          transform: translate(-2px, -50%);
-
-          @include media-breakpoint-down(md) {
+          &:before {
             transform: translateX(-2px);
           }
         }
@@ -168,18 +166,16 @@
           right: -56px;
         }
 
-        &:active {
-          transform: translate(2px, -50%);
+        &:before {
+          transform: scaleX(-1);
+        }
 
-          @include media-breakpoint-down(md) {
-            transform: translateX(2px);
+        &:active {
+          &:before {
+            transform: translateX(2px) scaleX(-1);
           }
         }
 
-        &:before {
-          transform: scaleX(-1);
-          display: inline-block;
-        }
       }
     }
   }

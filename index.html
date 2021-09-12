@@ -116,6 +116,8 @@
     }
 
     .preloader img {
+        width: 150px;
+        height: 150px;
         margin: 0 auto 15px;
         display: block;
         -webkit-animation: swing 1s infinite;
@@ -123,12 +125,11 @@
     }
 </style>
 <div class="preloader">
-    <img src="src/img/favicon/apple-icon-144x144.png">
+    <img src="src/img/1x/g5-logo.png">
     <strong>Loading...</strong>
 </div>
-<header class="mx-auto "
-        data-src="src/img/section-header-bg.jpg"
-        data-retina="src/img/section-header-bg@2x.jpg">
+<header class="mx-auto">
+    <div class="parallax parallax_bg" data-speed=".1"></div>
     <div class="section-header_inner">
         <div class="mj-tiles">
             <picture>
@@ -181,9 +182,7 @@
     </div>
 </header>
 <main class="mx-auto">
-    <section class="section-video "
-             data-src="src/img/section-texture-bg.png"
-             data-retina="src/img/section-texture-bg@2x.png">
+    <section class="section-video">
         <div class="container">
             <p>Enjoy a new take on Mahjong Solitaire as you help a young girl and her cat traverse the globe in search
                 of her lost parents.</p>
@@ -194,7 +193,7 @@
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
                 </div>
-                <div class="baloon">
+                <div class="baloon parallax" data-speed=".06">
                     <picture>
                         <source type="image/webp"
                                 srcset="src/img/webp/1x/baloon.webp 1x, src/img/webp/2x/baloon@2x.webp 2x">
@@ -208,13 +207,13 @@
                         />
                     </picture>
                 </div>
-                <div class="baloon2">
+                <div class="baloon-2 parallax" data-speed=".07">
                     <picture>
                         <source type="image/webp"
                                 srcset="src/img/webp/1x/baloon-3.webp 1x, src/img/webp/2x/baloon-3@2x.webp 2x">
                         <img
                                 alt="Baloon cat 1"
-                                class="baloon2_img__01"
+                                class="baloon-2_img__01"
                                 width="100"
                                 height="174"
                                 src="src/img/1x/baloon-3.png"
@@ -226,7 +225,7 @@
                                 srcset="src/img/webp/1x/baloon-2.webp 1x, src/img/webp/2x/baloon-2@2x.webp 2x">
                         <img
                                 alt="Baloon cat 2"
-                                class="baloon2_img__02"
+                                class="baloon-2_img__02"
                                 width="138"
                                 height="234"
                                 src="src/img/1x/baloon-2.png"
@@ -239,12 +238,13 @@
         </div>
     </section>
     <section class="section-experience">
-        <div class="cloud2">
+        <div class="parallax parallax_bg" data-speed=".06"></div>
+        <div class="cloud-2 parallax" data-speed="-.05">
             <picture>
                 <source type="image/webp" srcset="src/img/webp/1x/cloud-2.webp 1x, src/img/webp/2x/cloud-2@2x.webp 2x">
                 <img
                         alt="Cloud 2"
-                        class="cloud2_img"
+                        class="cloud-2_img"
                         width="332"
                         height="158"
                         src="src/img/1x/cloud-2.png"
@@ -294,7 +294,7 @@
                 </div>
             </div>
         </div>
-        <div class="cloud">
+        <div class="cloud parallax" data-speed="-.035">
             <picture>
                 <source type="image/webp" srcset="src/img/webp/1x/cloud.webp 1x, src/img/webp/2x/cloud@2x.webp 2x">
                 <img
@@ -570,8 +570,7 @@
     </section>
 
 </main>
-<footer class="mx-auto" data-src="src/img/footer-bg.jpg"
-        data-retina="src/img/footer-bg@2x.jpg">
+<footer class="mx-auto">
     <div class="container position-relative">
         <div class="row">
             <div class="col-md-6 col-lg-5 col-xl-4">
@@ -596,6 +595,11 @@
         </ul>
     </div>
 </footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
         crossorigin="anonymous">

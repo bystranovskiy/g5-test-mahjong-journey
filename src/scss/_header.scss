@@ -1,20 +1,25 @@
 header {
-  @include bgset(section-header-bg);
   max-width: $main_width;
   position: relative;
-  background-position: top center;
+  overflow: hidden;
 
   padding: 20px 0 50px;
 
   @include media-breakpoint-up(md) {
-    background-attachment: fixed;
-    background-size: 100% auto;
     padding: 40px 0 72px;
   }
 
   @include media-breakpoint-up(xl) {
-    background-size: $main_width auto;
     padding: 62px 0 72px;
+  }
+
+  .parallax_bg {
+    @include bgset(section-header-bg);
+    background-position: top center;
+    @include abs;
+
+    height: 120%;
+    background-size: cover;
   }
 
   .mahjong-logo {
