@@ -2,8 +2,6 @@
 
 (function ($) {
 
-    gsap.config({trialWarn: false});
-
     $(window).on("load", function () {
 
         gsap.to(".preloader", {
@@ -126,18 +124,14 @@
             opacity: 0
         });
 
-
-        for (let i = 1; i <= $(".features-list li").length; i++) {
-            const $this = ".features-list li:nth-child(" + i + ")";
-            gsap.from($this, {
-                ease: "back.out(1.7)",
-                scrollTrigger: ".section-features",
-                duration: 1,
-                delay: i * 0.1,
-                x: -500,
-                opacity: 0
-            });
-        }
+        gsap.from(".features-list li", {
+            ease: "back.out(1.7)",
+            scrollTrigger: ".features-list li",
+            duration: 1,
+            stagger: 0.1,
+            x: -500,
+            opacity: 0
+        });
 
     })
 

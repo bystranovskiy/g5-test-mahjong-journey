@@ -15,15 +15,14 @@
         const reviewSlider = $(".reviews-slider");
 
         reviewSlider.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
-            for (let i = 1; i <= 5; i++) {
-                gsap.from($("[data-slick-index='" + nextSlide + "'] .rating_img:nth-child(" + i + ")"), {
-                    ease: "back.out(1.7)",
-                    duration: .3,
-                    delay: i * 0.04 + 0.3,
-                    x: -100,
-                    opacity: 0
-                });
-            }
+            gsap.from($("[data-slick-index='" + nextSlide + "'] .rating_img"), {
+                ease: "back.out(1.7)",
+                duration: .3,
+                stagger: 0.04,
+                delay: .3,
+                x: -100,
+                opacity: 0
+            });
             gsap.from("[data-slick-index='" + nextSlide + "'] .avatar_img", {
                 ease: "bounce.out",
                 duration: 1,
