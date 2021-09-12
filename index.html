@@ -134,41 +134,44 @@
         <div class="mj-tiles">
             <picture>
                 <source type="image/webp"
-                        srcset="src/img/webp/1x/mj-tiles.webp 1x, src/img/webp/2x/mj-tiles@2x.webp 2x">
+                        data-srcset="src/img/webp/1x/mj-tiles.webp 1x, src/img/webp/2x/mj-tiles@2x.webp 2x">
                 <img
                         alt="MJ tiles"
-                        class="mj-tiles_img d-block"
+                        class="mj-tiles_img d-block lazyload"
                         width="394"
                         height="284"
-                        src="src/img/1x/mj-tiles.png"
-                        srcset="src/img/1x/mj-tiles.png 1x, src/img/2x/mj-tiles@2x.png 2x"
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                        data-src="src/img/1x/mj-tiles.png"
+                        data-srcset="src/img/1x/mj-tiles.png 1x, src/img/2x/mj-tiles@2x.png 2x"
                 />
             </picture>
         </div>
         <div class="eva-thinking">
             <picture>
                 <source type="image/webp"
-                        srcset="src/img/webp/1x/eva-thinking.webp 1x, src/img/webp/2x/eva-thinking@2x.webp 2x">
+                        data-srcset="src/img/webp/1x/eva-thinking.webp 1x, src/img/webp/2x/eva-thinking@2x.webp 2x">
                 <img
                         alt="Eva thinking"
-                        class="eva-thinking_img d-block"
+                        class="eva-thinking_img d-block lazyload"
                         width="362"
                         height="531"
-                        src="src/img/1x/eva-thinking.png"
-                        srcset="src/img/1x/eva-thinking.png 1x, src/img/2x/eva-thinking@2x.png 2x"
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                        data-src="src/img/1x/eva-thinking.png"
+                        data-srcset="src/img/1x/eva-thinking.png 1x, src/img/2x/eva-thinking@2x.png 2x"
                 />
             </picture>
         </div>
         <div class="mahjong-logo">
             <picture>
-                <source type="image/webp" srcset="src/img/webp/1x/logo.webp 1x, src/img/webp/2x/logo@2x.webp 2x">
+                <source type="image/webp" data-srcset="src/img/webp/1x/logo.webp 1x, src/img/webp/2x/logo@2x.webp 2x">
                 <img
                         alt="Mahjong Journey Game Logo"
-                        class="mahjong-logo_img"
+                        class="mahjong-logo_img lazyload"
                         width="409"
                         height="193"
-                        src="src/img/1x/logo.png"
-                        srcset="src/img/1x/logo.png 1x, src/img/2x/logo@2x.png 2x"
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                        data-src="src/img/1x/logo.png"
+                        data-srcset="src/img/1x/logo.png 1x, src/img/2x/logo@2x.png 2x"
                 />
             </picture>
         </div>
@@ -188,7 +191,11 @@
                 of her lost parents.</p>
             <div class="wooden-stand">
                 <div class="wooden-stand_inner">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/K5JQtjIc6ZY"
+                    <iframe
+                            class="lazyload"
+                            width="560"
+                            height="315"
+                            data-src="https://www.youtube.com/embed/K5JQtjIc6ZY"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
@@ -196,40 +203,43 @@
                 <div class="baloon parallax" data-speed=".06">
                     <picture>
                         <source type="image/webp"
-                                srcset="src/img/webp/1x/baloon.webp 1x, src/img/webp/2x/baloon@2x.webp 2x">
+                                data-srcset="src/img/webp/1x/baloon.webp 1x, src/img/webp/2x/baloon@2x.webp 2x">
                         <img
                                 alt="Baloon"
-                                class="baloon_img"
+                                class="baloon_img lazyload"
                                 width="167"
                                 height="291"
-                                src="src/img/1x/baloon.png"
-                                srcset="src/img/1x/baloon.png 1x, src/img/2x/baloon@2x.png 2x"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                data-src="src/img/1x/baloon.png"
+                                data-srcset="src/img/1x/baloon.png 1x, src/img/2x/baloon@2x.png 2x"
                         />
                     </picture>
                 </div>
                 <div class="baloon-2 parallax" data-speed=".07">
                     <picture>
                         <source type="image/webp"
-                                srcset="src/img/webp/1x/baloon-3.webp 1x, src/img/webp/2x/baloon-3@2x.webp 2x">
+                                data-srcset="src/img/webp/1x/baloon-3.webp 1x, src/img/webp/2x/baloon-3@2x.webp 2x">
                         <img
                                 alt="Baloon cat 1"
-                                class="baloon-2_img__01"
+                                class="baloon-2_img__01 lazyload"
                                 width="100"
                                 height="174"
-                                src="src/img/1x/baloon-3.png"
-                                srcset="src/img/1x/baloon-3.png 1x, src/img/2x/baloon-3@2x.png 2x"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                data-src="src/img/1x/baloon-3.png"
+                                data-srcset="src/img/1x/baloon-3.png 1x, src/img/2x/baloon-3@2x.png 2x"
                         />
                     </picture>
                     <picture>
                         <source type="image/webp"
-                                srcset="src/img/webp/1x/baloon-2.webp 1x, src/img/webp/2x/baloon-2@2x.webp 2x">
+                                data-srcset="src/img/webp/1x/baloon-2.webp 1x, src/img/webp/2x/baloon-2@2x.webp 2x">
                         <img
                                 alt="Baloon cat 2"
-                                class="baloon-2_img__02"
+                                class="baloon-2_img__02 lazyload"
                                 width="138"
                                 height="234"
-                                src="src/img/1x/baloon-2.png"
-                                srcset="src/img/1x/baloon-2.png 1x, src/img/2x/baloon-2@2x.png 2x"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                data-src="src/img/1x/baloon-2.png"
+                                data-srcset="src/img/1x/baloon-2.png 1x, src/img/2x/baloon-2@2x.png 2x"
                         />
                     </picture>
 
@@ -241,14 +251,15 @@
         <div class="parallax parallax_bg" data-speed=".06"></div>
         <div class="cloud-2 parallax" data-speed="-.05">
             <picture>
-                <source type="image/webp" srcset="src/img/webp/1x/cloud-2.webp 1x, src/img/webp/2x/cloud-2@2x.webp 2x">
+                <source type="image/webp" data-srcset="src/img/webp/1x/cloud-2.webp 1x, src/img/webp/2x/cloud-2@2x.webp 2x">
                 <img
                         alt="Cloud 2"
-                        class="cloud-2_img"
+                        class="cloud-2_img lazyload"
                         width="332"
                         height="158"
-                        src="src/img/1x/cloud-2.png"
-                        srcset="src/img/1x/cloud-2.png 1x, src/img/2x/cloud-2@2x.png 2x"
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                        data-src="src/img/1x/cloud-2.png"
+                        data-srcset="src/img/1x/cloud-2.png 1x, src/img/2x/cloud-2@2x.png 2x"
                 />
             </picture>
         </div>
@@ -258,14 +269,15 @@
                     <div class="screen">
                         <picture>
                             <source type="image/webp"
-                                    srcset="src/img/webp/1x/screen.webp 1x, src/img/webp/2x/screen@2x.webp 2x">
+                                    data-srcset="src/img/webp/1x/screen.webp 1x, src/img/webp/2x/screen@2x.webp 2x">
                             <img
                                     alt="Game screen"
-                                    class="screen_img"
+                                    class="screen_img lazyload"
                                     width="634"
                                     height="380"
-                                    src="src/img/1x/screen.jpg"
-                                    srcset="src/img/1x/screen.jpg 1x, src/img/2x/screen@2x.jpg 2x"
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                    data-src="src/img/1x/screen.jpg"
+                                    data-srcset="src/img/1x/screen.jpg 1x, src/img/2x/screen@2x.jpg 2x"
                             />
                         </picture>
                     </div>
@@ -273,14 +285,15 @@
                 <div class="col-lg-5">
                     <picture>
                         <source type="image/webp"
-                                srcset="src/img/webp/1x/mahjong.webp 1x, src/img/webp/2x/mahjong@2x.webp 2x">
+                                data-srcset="src/img/webp/1x/mahjong.webp 1x, src/img/webp/2x/mahjong@2x.webp 2x">
                         <img
                                 alt="Mahjong"
-                                class="mahjong_img d-block mx-auto my-2"
+                                class="mahjong_img d-block mx-auto my-2 lazyload"
                                 width="120"
                                 height="120"
-                                src="src/img/1x/mahjong.jpg"
-                                srcset="src/img/1x/mahjong.jpg 1x, src/img/2x/mahjong@2x.jpg 2x"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                data-src="src/img/1x/mahjong.jpg"
+                                data-srcset="src/img/1x/mahjong.jpg 1x, src/img/2x/mahjong@2x.jpg 2x"
                         />
                     </picture>
                     <h2 class="title">Mahjong Journey</h2>
@@ -296,14 +309,15 @@
         </div>
         <div class="cloud parallax" data-speed="-.035">
             <picture>
-                <source type="image/webp" srcset="src/img/webp/1x/cloud.webp 1x, src/img/webp/2x/cloud@2x.webp 2x">
+                <source type="image/webp" data-srcset="src/img/webp/1x/cloud.webp 1x, src/img/webp/2x/cloud@2x.webp 2x">
                 <img
                         alt="Cloud"
-                        class="cloud_img"
+                        class="cloud_img lazyload"
                         width="237"
                         height="147"
-                        src="src/img/1x/cloud.png"
-                        srcset="src/img/1x/cloud.png 1x, src/img/2x/cloud@2x.png 2x"
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                        data-src="src/img/1x/cloud.png"
+                        data-srcset="src/img/1x/cloud.png 1x, src/img/2x/cloud@2x.png 2x"
                 />
             </picture>
         </div>
@@ -315,14 +329,15 @@
                     <div class="avatar">
                         <picture>
                             <source type="image/webp"
-                                    srcset="src/img/webp/1x/review-user-avatar.webp 1x, src/img/webp/2x/review-user-avatar@2x.webp 2x">
+                                    data-srcset="src/img/webp/1x/review-user-avatar.webp 1x, src/img/webp/2x/review-user-avatar@2x.webp 2x">
                             <img
                                     alt="User avatar"
-                                    class="avatar_img"
+                                    class="avatar_img lazyload"
                                     width="160"
                                     height="160"
-                                    src="src/img/1x/review-user-avatar.png"
-                                    srcset="src/img/1x/review-user-avatar.png 1x, src/img/2x/review-user-avatar@2x.png 2x"
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                    data-src="src/img/1x/review-user-avatar.png"
+                                    data-srcset="src/img/1x/review-user-avatar.png 1x, src/img/2x/review-user-avatar@2x.png 2x"
                             />
                         </picture>
                     </div>
@@ -358,14 +373,15 @@
                     <div class="avatar">
                         <picture>
                             <source type="image/webp"
-                                    srcset="src/img/webp/1x/review-user-avatar.webp 1x, src/img/webp/2x/review-user-avatar@2x.webp 2x">
+                                    data-srcset="src/img/webp/1x/review-user-avatar.webp 1x, src/img/webp/2x/review-user-avatar@2x.webp 2x">
                             <img
                                     alt="User avatar"
-                                    class="avatar_img"
+                                    class="avatar_img lazyload"
                                     width="160"
                                     height="160"
-                                    src="src/img/1x/review-user-avatar.png"
-                                    srcset="src/img/1x/review-user-avatar.png 1x, src/img/2x/review-user-avatar@2x.png 2x"
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                    data-src="src/img/1x/review-user-avatar.png"
+                                    data-srcset="src/img/1x/review-user-avatar.png 1x, src/img/2x/review-user-avatar@2x.png 2x"
                             />
                         </picture>
                     </div>
@@ -400,14 +416,15 @@
                     <div class="avatar">
                         <picture>
                             <source type="image/webp"
-                                    srcset="src/img/webp/1x/review-user-avatar.webp 1x, src/img/webp/2x/review-user-avatar@2x.webp 2x">
+                                    data-srcset="src/img/webp/1x/review-user-avatar.webp 1x, src/img/webp/2x/review-user-avatar@2x.webp 2x">
                             <img
                                     alt="User avatar"
-                                    class="avatar_img"
+                                    class="avatar_img lazyload"
                                     width="160"
                                     height="160"
-                                    src="src/img/1x/review-user-avatar.png"
-                                    srcset="src/img/1x/review-user-avatar.png 1x, src/img/2x/review-user-avatar@2x.png 2x"
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                    data-src="src/img/1x/review-user-avatar.png"
+                                    data-srcset="src/img/1x/review-user-avatar.png 1x, src/img/2x/review-user-avatar@2x.png 2x"
                             />
                         </picture>
                     </div>
@@ -444,14 +461,15 @@
         <div class="hourglass">
             <picture>
                 <source type="image/webp"
-                        srcset="src/img/webp/1x/hourglass.webp 1x, src/img/webp/2x/hourglass@2x.webp 2x">
+                        data-srcset="src/img/webp/1x/hourglass.webp 1x, src/img/webp/2x/hourglass@2x.webp 2x">
                 <img
                         alt="Hourglass"
-                        class="hourglass_img"
+                        class="hourglass_img lazyload"
                         width="168"
                         height="178"
-                        src="src/img/1x/hourglass.png"
-                        srcset="src/img/1x/hourglass.png 1x, src/img/2x/hourglass@2x.png 2x"
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                        data-src="src/img/1x/hourglass.png"
+                        data-srcset="src/img/1x/hourglass.png 1x, src/img/2x/hourglass@2x.png 2x"
                 />
             </picture>
         </div>
@@ -466,14 +484,15 @@
                             <span class="icon">
                                 <picture>
                                     <source type="image/webp"
-                                            srcset="src/img/webp/1x/icon-heart.webp 1x, src/img/webp/2x/icon-heart@2x.webp 2x">
+                                            data-srcset="src/img/webp/1x/icon-heart.webp 1x, src/img/webp/2x/icon-heart@2x.webp 2x">
                                     <img
                                             alt="icon heart"
-                                            class="icon_img"
+                                            class="icon_img lazyload"
                                             width="59"
                                             height="58"
-                                            src="src/img/1x/icon-heart.png"
-                                            srcset="src/img/1x/icon-heart.png 1x, src/img/2x/icon-heart@2x.png 2x"
+                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                            data-src="src/img/1x/icon-heart.png"
+                                            data-srcset="src/img/1x/icon-heart.png 1x, src/img/2x/icon-heart@2x.png 2x"
                                     />
                                 </picture>
                             </span>
@@ -483,14 +502,15 @@
                             <span class="icon">
                                 <picture>
                                     <source type="image/webp"
-                                            srcset="src/img/webp/1x/icon-babyu.webp 1x, src/img/webp/2x/icon-babyu@2x.webp 2x">
+                                            data-srcset="src/img/webp/1x/icon-babyu.webp 1x, src/img/webp/2x/icon-babyu@2x.webp 2x">
                                     <img
                                             alt="icon babyu"
-                                            class="icon_img"
+                                            class="icon_img lazyload"
                                             width="65"
                                             height="58"
-                                            src="src/img/1x/icon-babyu.png"
-                                            srcset="src/img/1x/icon-babyu.png 1x, src/img/2x/icon-babyu@2x.png 2x"
+                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                            data-src="src/img/1x/icon-babyu.png"
+                                            data-srcset="src/img/1x/icon-babyu.png 1x, src/img/2x/icon-babyu@2x.png 2x"
                                     />
                                 </picture>
                             </span>
@@ -500,14 +520,15 @@
                             <span class="icon">
                                 <picture>
                                     <source type="image/webp"
-                                            srcset="src/img/webp/1x/icon-eye.webp 1x, src/img/webp/2x/icon-eye@2x.webp 2x">
+                                            data-srcset="src/img/webp/1x/icon-eye.webp 1x, src/img/webp/2x/icon-eye@2x.webp 2x">
                                     <img
                                             alt="icon eye"
-                                            class="icon_img"
+                                            class="icon_img lazyload"
                                             width="65"
                                             height="51"
-                                            src="src/img/1x/icon-eye.png"
-                                            srcset="src/img/1x/icon-eye.png 1x, src/img/2x/icon-eye@2x.png 2x"
+                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                            data-src="src/img/1x/icon-eye.png"
+                                            data-srcset="src/img/1x/icon-eye.png 1x, src/img/2x/icon-eye@2x.png 2x"
                                     />
                                 </picture>
                             </span>
@@ -517,14 +538,15 @@
                             <span class="icon">
                                 <picture>
                                     <source type="image/webp"
-                                            srcset="src/img/webp/1x/icon-rocket.webp 1x, src/img/webp/2x/icon-rocket@2x.webp 2x">
+                                            data-srcset="src/img/webp/1x/icon-rocket.webp 1x, src/img/webp/2x/icon-rocket@2x.webp 2x">
                                     <img
                                             alt="icon rocket"
-                                            class="icon_img"
+                                            class="icon_img lazyload"
                                             width="63"
                                             height="67"
-                                            src="src/img/1x/icon-rocket.png"
-                                            srcset="src/img/1x/icon-rocket.png 1x, src/img/2x/icon-rocket@2x.png 2x"
+                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                            data-src="src/img/1x/icon-rocket.png"
+                                            data-srcset="src/img/1x/icon-rocket.png 1x, src/img/2x/icon-rocket@2x.png 2x"
                                     />
                                 </picture>
                             </span>
@@ -534,14 +556,15 @@
                             <span class="icon">
                                 <picture>
                                     <source type="image/webp"
-                                            srcset="src/img/webp/1x/icon-clock.webp 1x, src/img/webp/2x/icon-clock@2x.webp 2x">
+                                            data-srcset="src/img/webp/1x/icon-clock.webp 1x, src/img/webp/2x/icon-clock@2x.webp 2x">
                                     <img
                                             alt="icon clock"
-                                            class="icon_img"
+                                            class="icon_img lazyload"
                                             width="50"
                                             height="51"
-                                            src="src/img/1x/icon-clock.png"
-                                            srcset="src/img/1x/icon-clock.png 1x, src/img/2x/icon-clock@2x.png 2x"
+                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                            data-src="src/img/1x/icon-clock.png"
+                                            data-srcset="src/img/1x/icon-clock.png 1x, src/img/2x/icon-clock@2x.png 2x"
                                     />
                                 </picture>
                             </span>
@@ -553,14 +576,15 @@
                     <span class="smiling-cat">
                         <picture>
                             <source type="image/webp"
-                                    srcset="src/img/webp/1x/smiling-cat.webp 1x, src/img/webp/2x/smiling-cat@2x.webp 2x">
+                                    data-srcset="src/img/webp/1x/smiling-cat.webp 1x, src/img/webp/2x/smiling-cat@2x.webp 2x">
                             <img
                                     alt="smiling cat"
-                                    class="smiling-cat_img mx-auto"
+                                    class="smiling-cat_img mx-auto lazyload"
                                     width="269"
                                     height="430"
-                                    src="src/img/1x/icon-clock.png"
-                                    srcset="src/img/1x/smiling-cat.png 1x, src/img/2x/smiling-cat@2x.png 2x"
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                    data-src="src/img/1x/icon-clock.png"
+                                    data-srcset="src/img/1x/smiling-cat.png 1x, src/img/2x/smiling-cat@2x.png 2x"
                             />
                         </picture>
                     </span>
@@ -598,14 +622,8 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
-
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-        crossorigin="anonymous">
-</script>
-<script type="text/javascript"
-        src="build/bundle.js">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="build/bundle.js">
 </script>
 </body>
 </html>

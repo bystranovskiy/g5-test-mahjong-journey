@@ -12,16 +12,9 @@
             ease: "none"
         });
 
-        $(".reviews-slider").slick({
-            infinite: true,
-            speed: 300,
-            slidesToShow: 1,
-            adaptiveHeight: true,
-            autoplay: true,
-            autoplaySpeed: 3000,
-            fade: true,
-            cssEase: 'linear'
-        }).on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+        const reviewSlider = $(".reviews-slider");
+
+        reviewSlider.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
             for (let i = 1; i <= 5; i++) {
                 gsap.from($("[data-slick-index='" + nextSlide + "'] .rating_img:nth-child(" + i + ")"), {
                     ease: "back.out(1.7)",
@@ -51,6 +44,34 @@
                 scale: .3,
                 opacity: 0
             });
+        }).on('init', function(event, slick){
+            gsap.from(".slick-arrow.slick-prev", {
+                ease: "back.out(1.7)",
+                scrollTrigger: ".reviews-slider",
+                duration: .5,
+                delay: .5,
+                x: 200,
+                opacity: 0
+            });
+            gsap.from(".slick-arrow.slick-next", {
+                ease: "back.out(1.7)",
+                scrollTrigger: ".reviews-slider",
+                duration: .5,
+                delay: .5,
+                x: -200,
+                opacity: 0
+            });
+        })
+
+        reviewSlider.slick({
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            adaptiveHeight: true,
+            autoplay: true,
+            autoplaySpeed: 4000,
+            fade: true,
+            cssEase: 'linear'
         });
 
     });

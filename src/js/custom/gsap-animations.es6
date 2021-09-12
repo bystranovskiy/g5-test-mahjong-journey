@@ -109,23 +109,6 @@
             opacity: 0,
             delay: .5,
         });
-        gsap.from(".slick-arrow.slick-prev", {
-            ease: "back.out(1.7)",
-            scrollTrigger: ".reviews-slider",
-            duration: .5,
-            delay: .5,
-            x: 200,
-            opacity: 0
-        });
-        gsap.from(".slick-arrow.slick-next", {
-            ease: "back.out(1.7)",
-            scrollTrigger: ".reviews-slider",
-            duration: .5,
-            delay: .5,
-            x: -200,
-            opacity: 0
-        });
-
 
         gsap.from(".section-features h2", {
             ease: "bounce.out",
@@ -133,14 +116,12 @@
             duration: 1,
             scale: 0,
             opacity: 0,
-            delay: .5,
         });
 
         gsap.from(".smiling-cat_img", {
             ease: "back.out(1.7)",
             scrollTrigger: ".smiling-cat",
             duration: 1,
-            delay: .5,
             x: 500,
             opacity: 0
         });
@@ -150,7 +131,7 @@
             const $this = ".features-list li:nth-child(" + i + ")";
             gsap.from($this, {
                 ease: "back.out(1.7)",
-                scrollTrigger: $this,
+                scrollTrigger: ".section-features",
                 duration: 1,
                 delay: i * 0.1,
                 x: -500,

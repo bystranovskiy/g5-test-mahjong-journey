@@ -1,3 +1,18 @@
+@keyframes hourglassSpin {
+  0% {
+    transform: rotate(0) scale(.8);
+  }
+  5% {
+    transform: rotate(180deg) scale(1.1);
+  }
+  10% {
+    transform: rotate(360deg) scale(.8);
+  }
+  100% {
+    transform: rotate(360deg) scale(.8);
+  }
+}
+
 .section-reviews {
   @include rounding;
   background-color: $main_bg;
@@ -182,6 +197,7 @@
 
   .hourglass {
     position: absolute;
+    animation: hourglassSpin 4.3s infinite;
 
     top: -70px;
     left: 42px;
