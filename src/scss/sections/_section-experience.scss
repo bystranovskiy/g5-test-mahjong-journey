@@ -1,6 +1,6 @@
 .section-experience {
+  @include bgset(section-experience-bg);
   @include rounding;
-  @include bgset;
   text-align: center;
   font-weight: 500;
 

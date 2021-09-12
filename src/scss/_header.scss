@@ -1,7 +1,7 @@
 header {
+  @include bgset(section-header-bg);
   max-width: $main_width;
   position: relative;
-  @include bgset;
   background-position: top center;
 
   padding: 20px 0 50px;

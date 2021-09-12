@@ -23,7 +23,7 @@
     <meta name="msapplication-TileImage" content="src/img/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <meta name="robots" content="all"/>
-    <meta property="og:image" content="src/img/logo@x2-min.png"/>
+    <meta property="og:image" content="src/img/logo@2x.png"/>
     <meta property="og:site_name" content="Mahjong Journey Game"/>
     <meta property="og:type" content="game"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -126,243 +126,228 @@
     <img src="src/img/favicon/apple-icon-144x144.png">
     <strong>Loading...</strong>
 </div>
-<header class="mx-auto lazy"
-        data-src="src/img/section-header-bg-min.jpg"
-        data-retina="src/img/section-header-bg@x2-min.jpg">
+<header class="mx-auto "
+        data-src="src/img/section-header-bg.jpg"
+        data-retina="src/img/section-header-bg@2x.jpg">
     <div class="section-header_inner">
         <div class="mj-tiles">
-            <img alt="MJ tiles"
-                 class="mj-tiles_img d-block lazy"
-                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-                 data-src="src/img/mj_tiles-min.png"
-                 data-retina="src/img/mj_tiles@x2-min.png"
-                 width="394"
-                 height="284"
-                 data-g5="light-speed-in-right"
-                 data-g5-delay="500"
-                 data-g5-duration="800"
-            >
+            <picture>
+                <source type="image/webp"
+                        srcset="src/img/webp/1x/mj-tiles.webp 1x, src/img/webp/2x/mj-tiles@2x.webp 2x">
+                <img
+                        alt="MJ tiles"
+                        class="mj-tiles_img d-block"
+                        width="394"
+                        height="284"
+                        src="src/img/1x/mj-tiles.png"
+                        srcset="src/img/1x/mj-tiles.png 1x, src/img/2x/mj-tiles@2x.png 2x"
+                />
+            </picture>
         </div>
         <div class="eva-thinking">
-            <img alt="Eva thinking"
-                 class="eva-thinking_img d-block lazy"
-                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-                 data-src="src/img/eva_thinking-min.png"
-                 data-retina="src/img/eva_thinking@x2-min.png"
-                 width="362" height="531"
-                 data-g5="light-speed-in-left"
-                 data-g5-delay="500"
-                 data-g5-duration="800"
-            >
+            <picture>
+                <source type="image/webp"
+                        srcset="src/img/webp/1x/eva-thinking.webp 1x, src/img/webp/2x/eva-thinking@2x.webp 2x">
+                <img
+                        alt="Eva thinking"
+                        class="eva-thinking_img d-block"
+                        width="362"
+                        height="531"
+                        src="src/img/1x/eva-thinking.png"
+                        srcset="src/img/1x/eva-thinking.png 1x, src/img/2x/eva-thinking@2x.png 2x"
+                />
+            </picture>
         </div>
         <div class="mahjong-logo">
-            <img alt="Mahjong Journey Game Logo"
-                 class="mahjong-logo_img lazy"
-                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-                 data-src="src/img/logo-min.png"
-                 data-retina="src/img/logo@x2-min.png"
-                 width="409"
-                 height="193"
-                 data-g5="bounce-in-down"
-                 data-g5-delay="500"
-            >
+            <picture>
+                <source type="image/webp" srcset="src/img/webp/1x/logo.webp 1x, src/img/webp/2x/logo@2x.webp 2x">
+                <img
+                        alt="Mahjong Journey Game Logo"
+                        class="mahjong-logo_img"
+                        width="409"
+                        height="193"
+                        src="src/img/1x/logo.png"
+                        srcset="src/img/1x/logo.png 1x, src/img/2x/logo@2x.png 2x"
+                />
+            </picture>
         </div>
-        <div class="btn-play_wrapper"
-             data-g5="bounce-in"
-             data-g5-delay="1400"
-        >
-            <div class="btn-play mx-auto lazy"
-                 data-src="src/img/btn-bg-min.png"
-                 data-retina="src/img/btn-bg@x2-min.png"
-            >
-                <div class="btn-play_hover lazy"
-                     data-src="src/img/btn-bg-min.png"
-                     data-retina="src/img/btn-bg@x2-min.png">
-                </div>
+        <div class="btn-play_wrapper">
+            <div class="btn-play mx-auto">
+                <div class="btn-play_hover"></div>
                 <span>Play Now</span>
             </div>
         </div>
-        <h1 class="slogan text-center mt-3"
-            data-g5="bounce-in-up"
-            data-g5-delay="500"
-        >Match Tiles & Relax</h1>
+        <h1 class="slogan text-center mt-3">Match Tiles & Relax</h1>
     </div>
 </header>
 <main class="mx-auto">
-    <section class="section-video lazy"
-             data-src="src/img/section-texture-bg-min.png"
-             data-retina="src/img/section-texture-bg@x2-min.png">
+    <section class="section-video "
+             data-src="src/img/section-texture-bg.png"
+             data-retina="src/img/section-texture-bg@2x.png">
         <div class="container">
-            <p
-                    data-g5="bounce-in-up"
-                    data-g5-delay="1800"
-
-            >Enjoy a new take on Mahjong Solitaire as you help a young girl and her cat traverse the globe in search
+            <p>Enjoy a new take on Mahjong Solitaire as you help a young girl and her cat traverse the globe in search
                 of her lost parents.</p>
-            <div class="wooden-stand lazy"
-                 data-src="src/img/wooden-stand-min.png"
-                 data-retina="src/img/wooden-stand@x2-min.png"
-                 data-g5="bounce-in-up"
-                 data-g5-delay="2000"
-            >
-                <div class="wooden-stand_inner"
-                     data-g5="bounce-in"
-                     data-g5-delay="2800"
-                >
-                    <iframe class="lazy"
-                            data-loader="youtube"
-                            data-src="K5JQtjIc6ZY"
-                            width="560"
-                            height="315"
-                    ></iframe>
+            <div class="wooden-stand">
+                <div class="wooden-stand_inner">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/K5JQtjIc6ZY"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                 </div>
                 <div class="baloon">
-                    <img alt="Baloon"
-                         class="baloon_img lazy"
-                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-                         data-src="src/img/baloon-min.png"
-                         data-retina="src/img/baloon@x2-min.png"
-                         width="167"
-                         height="291"
-                         data-g5="bounce-in-up"
-                         data-g5-delay="600"
-                    >
+                    <picture>
+                        <source type="image/webp"
+                                srcset="src/img/webp/1x/baloon.webp 1x, src/img/webp/2x/baloon@2x.webp 2x">
+                        <img
+                                alt="Baloon"
+                                class="baloon_img"
+                                width="167"
+                                height="291"
+                                src="src/img/1x/baloon.png"
+                                srcset="src/img/1x/baloon.png 1x, src/img/2x/baloon@2x.png 2x"
+                        />
+                    </picture>
                 </div>
                 <div class="baloon2">
-                    <img alt="Baloon cat 1"
-                         class="baloon2_img__01 lazy"
-                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-                         data-src="src/img/baloon3-min.png"
-                         data-retina="src/img/baloon3@x2-min.png"
-                         width="100"
-                         height="174"
-                         data-g5="bounce-in-up"
-                         data-g5-delay="800"
-                    >
-                    <img alt="Baloon cat 2"
-                         class="baloon2_img__02 lazy"
-                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-                         data-src="src/img/baloon2-min.png"
-                         data-retina="src/img/baloon2@x2-min.png"
-                         width="138"
-                         height="234"
-                         data-g5="bounce-in-up"
-                         data-g5-delay="700"
-                    >
+                    <picture>
+                        <source type="image/webp"
+                                srcset="src/img/webp/1x/baloon-3.webp 1x, src/img/webp/2x/baloon-3@2x.webp 2x">
+                        <img
+                                alt="Baloon cat 1"
+                                class="baloon2_img__01"
+                                width="100"
+                                height="174"
+                                src="src/img/1x/baloon-3.png"
+                                srcset="src/img/1x/baloon-3.png 1x, src/img/2x/baloon-3@2x.png 2x"
+                        />
+                    </picture>
+                    <picture>
+                        <source type="image/webp"
+                                srcset="src/img/webp/1x/baloon-2.webp 1x, src/img/webp/2x/baloon-2@2x.webp 2x">
+                        <img
+                                alt="Baloon cat 2"
+                                class="baloon2_img__02"
+                                width="138"
+                                height="234"
+                                src="src/img/1x/baloon-2.png"
+                                srcset="src/img/1x/baloon-2.png 1x, src/img/2x/baloon-2@2x.png 2x"
+                        />
+                    </picture>
+
                 </div>
             </div>
         </div>
     </section>
-    <section class="section-experience lazy"
-             data-src="src/img/section-experience-bg-min.jpg"
-             data-retina="src/img/section-experience-bg@x2-min.jpg">
+    <section class="section-experience">
         <div class="cloud2">
-            <img alt="Cloud 2"
-                 class="cloud2_img lazy"
-                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-                 data-src="src/img/cloud2-min.png"
-                 data-retina="src/img/cloud2@x2-min.png"
-                 width="332"
-                 height="158"
-                 data-g5="light-speed-in-right"
-                 data-g5-delay="500"
-            >
+            <picture>
+                <source type="image/webp" srcset="src/img/webp/1x/cloud-2.webp 1x, src/img/webp/2x/cloud-2@2x.webp 2x">
+                <img
+                        alt="Cloud 2"
+                        class="cloud2_img"
+                        width="332"
+                        height="158"
+                        src="src/img/1x/cloud-2.png"
+                        srcset="src/img/1x/cloud-2.png 1x, src/img/2x/cloud-2@2x.png 2x"
+                />
+            </picture>
         </div>
         <div class="container position-relative">
             <div class="row">
                 <div class="col-lg-7">
-                    <div class="screen"
-                         data-g5="bounce-in"
-                    >
-                        <img alt="Game screen"
-                             class="screen_img lazy"
-                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-                             data-src="src/img/screen-min.jpg"
-                             data-retina="src/img/screen@x2-min.jpg"
-                             width="634"
-                             height="380">
+                    <div class="screen">
+                        <picture>
+                            <source type="image/webp"
+                                    srcset="src/img/webp/1x/screen.webp 1x, src/img/webp/2x/screen@2x.webp 2x">
+                            <img
+                                    alt="Game screen"
+                                    class="screen_img"
+                                    width="634"
+                                    height="380"
+                                    src="src/img/1x/screen.jpg"
+                                    srcset="src/img/1x/screen.jpg 1x, src/img/2x/screen@2x.jpg 2x"
+                            />
+                        </picture>
                     </div>
                 </div>
-                <div class="col-lg-5"
-                     data-g5="bounce-in-up"
-                >
-                    <img alt="Mahjong"
-                         class="mahjong_img d-block mx-auto my-2 lazy"
-                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-                         data-src="src/img/mahjong-min.jpg"
-                         data-retina="src/img/mahjong@x2-min.jpg"
-                         width="120"
-                         height="120">
+                <div class="col-lg-5">
+                    <picture>
+                        <source type="image/webp"
+                                srcset="src/img/webp/1x/mahjong.webp 1x, src/img/webp/2x/mahjong@2x.webp 2x">
+                        <img
+                                alt="Mahjong"
+                                class="mahjong_img d-block mx-auto my-2"
+                                width="120"
+                                height="120"
+                                src="src/img/1x/mahjong.jpg"
+                                srcset="src/img/1x/mahjong.jpg 1x, src/img/2x/mahjong@2x.jpg 2x"
+                        />
+                    </picture>
                     <h2 class="title">Mahjong Journey</h2>
                     <div class="content">
                         <p>Experience a new take<br/> on Mahjong Solitaire</p>
                     </div>
-                    <div class="btn-play btn-play__medium mx-auto lazy"
-                         data-src="src/img/btn-bg-min.png"
-                         data-retina="src/img/btn-bg@x2-min.png">
-                        <div class="btn-play_hover lazy"
-                             data-src="src/img/btn-bg-min.png"
-                             data-retina="src/img/btn-bg@x2-min.png">
-
-                        </div>
+                    <div class="btn-play btn-play__medium mx-auto">
+                        <div class="btn-play_hover"></div>
                         <span>Play Now</span>
                     </div>
                 </div>
             </div>
         </div>
         <div class="cloud">
-            <img alt="Cloud"
-                 class="cloud_img lazy"
-                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-                 data-src="src/img/cloud-min.png"
-                 data-retina="src/img/cloud@x2-min.png"
-                 width="237"
-                 height="147"
-                 data-g5="light-speed-in-left"
-                 data-g5-delay="700"
-            >
+            <picture>
+                <source type="image/webp" srcset="src/img/webp/1x/cloud.webp 1x, src/img/webp/2x/cloud@2x.webp 2x">
+                <img
+                        alt="Cloud"
+                        class="cloud_img"
+                        width="237"
+                        height="147"
+                        src="src/img/1x/cloud.png"
+                        srcset="src/img/1x/cloud.png 1x, src/img/2x/cloud@2x.png 2x"
+                />
+            </picture>
         </div>
     </section>
     <section class="section-reviews">
         <div class="container">
-            <div class="reviews-slider"
-                 data-g5="bounce-in"
-            >
+            <div class="reviews-slider">
                 <div class="reviews-item">
                     <div class="avatar">
-                        <img alt="User avatar"
-                             class="avatar_img"
-                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-                             data-lazy="src/img/review-avatar-user-1@x2-min.png"
-                             width="160"
-                             height="160">
+                        <picture>
+                            <source type="image/webp"
+                                    srcset="src/img/webp/1x/review-user-avatar.webp 1x, src/img/webp/2x/review-user-avatar@2x.webp 2x">
+                            <img
+                                    alt="User avatar"
+                                    class="avatar_img"
+                                    width="160"
+                                    height="160"
+                                    src="src/img/1x/review-user-avatar.png"
+                                    srcset="src/img/1x/review-user-avatar.png 1x, src/img/2x/review-user-avatar@2x.png 2x"
+                            />
+                        </picture>
                     </div>
+
                     <div class="content">
                         <div class="rating">
                             <img alt="Rating star"
                                  class="rating_img"
-                                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-                                 data-lazy="src/img/star.svg"
+                                 src="src/img/svg/star.svg"
                                  width="49" height="47">
                             <img alt="Rating star"
                                  class="rating_img"
-                                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-                                 data-lazy="src/img/star.svg"
+                                 src="src/img/svg/star.svg"
                                  width="49" height="47">
                             <img alt="Rating star"
                                  class="rating_img"
-                                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-                                 data-lazy="src/img/star.svg"
+                                 src="src/img/svg/star.svg"
                                  width="49" height="47">
                             <img alt="Rating star"
                                  class="rating_img"
-                                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-                                 data-lazy="src/img/star.svg"
+                                 src="src/img/svg/star.svg"
                                  width="49" height="47">
                             <img alt="Rating star"
                                  class="rating_img"
-                                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-                                 data-lazy="src/img/star.svg"
+                                 src="src/img/svg/star.svg"
                                  width="49" height="47">
                         </div>
                         <div class="name">Ad****a</div>
@@ -371,39 +356,40 @@
                 </div>
                 <div class="reviews-item">
                     <div class="avatar">
-                        <img alt="User avatar"
-                             class="avatar_img"
-                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-                             data-lazy="src/img/review-avatar-user-1@x2-min.png"
-                             width="160"
-                             height="160">
+                        <picture>
+                            <source type="image/webp"
+                                    srcset="src/img/webp/1x/review-user-avatar.webp 1x, src/img/webp/2x/review-user-avatar@2x.webp 2x">
+                            <img
+                                    alt="User avatar"
+                                    class="avatar_img"
+                                    width="160"
+                                    height="160"
+                                    src="src/img/1x/review-user-avatar.png"
+                                    srcset="src/img/1x/review-user-avatar.png 1x, src/img/2x/review-user-avatar@2x.png 2x"
+                            />
+                        </picture>
                     </div>
                     <div class="content">
                         <div class="rating">
                             <img alt="Rating star"
                                  class="rating_img"
-                                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-                                 data-lazy="src/img/star.svg"
+                                 src="src/img/svg/star.svg"
                                  width="49" height="47">
                             <img alt="Rating star"
                                  class="rating_img"
-                                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-                                 data-lazy="src/img/star.svg"
+                                 src="src/img/svg/star.svg"
                                  width="49" height="47">
                             <img alt="Rating star"
                                  class="rating_img"
-                                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-                                 data-lazy="src/img/star.svg"
+                                 src="src/img/svg/star.svg"
                                  width="49" height="47">
-                            <img alt="Rating star disabled"
+                            <img alt="Rating star"
                                  class="rating_img"
-                                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-                                 data-lazy="src/img/star-disabled.svg"
+                                 src="src/img/svg/star-disabled.svg"
                                  width="49" height="47">
-                            <img alt="Rating star disabled"
+                            <img alt="Rating star"
                                  class="rating_img"
-                                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-                                 data-lazy="src/img/star-disabled.svg"
+                                 src="src/img/svg/star-disabled.svg"
                                  width="49" height="47">
                         </div>
                         <div class="name">Ad****a</div>
@@ -412,39 +398,40 @@
                 </div>
                 <div class="reviews-item">
                     <div class="avatar">
-                        <img alt="User avatar"
-                             class="avatar_img"
-                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-                             data-lazy="src/img/review-avatar-user-1@x2-min.png"
-                             width="160"
-                             height="160">
+                        <picture>
+                            <source type="image/webp"
+                                    srcset="src/img/webp/1x/review-user-avatar.webp 1x, src/img/webp/2x/review-user-avatar@2x.webp 2x">
+                            <img
+                                    alt="User avatar"
+                                    class="avatar_img"
+                                    width="160"
+                                    height="160"
+                                    src="src/img/1x/review-user-avatar.png"
+                                    srcset="src/img/1x/review-user-avatar.png 1x, src/img/2x/review-user-avatar@2x.png 2x"
+                            />
+                        </picture>
                     </div>
                     <div class="content">
                         <div class="rating">
                             <img alt="Rating star"
                                  class="rating_img"
-                                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-                                 data-lazy="src/img/star.svg"
+                                 src="src/img/svg/star.svg"
                                  width="49" height="47">
                             <img alt="Rating star"
                                  class="rating_img"
-                                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-                                 data-lazy="src/img/star.svg"
+                                 src="src/img/svg/star.svg"
                                  width="49" height="47">
-                            <img alt="Rating star disabled"
+                            <img alt="Rating star"
                                  class="rating_img"
-                                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-                                 data-lazy="src/img/star-disabled.svg"
+                                 src="src/img/svg/star-disabled.svg"
                                  width="49" height="47">
-                            <img alt="Rating star disabled"
+                            <img alt="Rating star"
                                  class="rating_img"
-                                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-                                 data-lazy="src/img/star-disabled.svg"
+                                 src="src/img/svg/star-disabled.svg"
                                  width="49" height="47">
-                            <img alt="Rating star disabled"
+                            <img alt="Rating star"
                                  class="rating_img"
-                                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-                                 data-lazy="src/img/star-disabled.svg"
+                                 src="src/img/svg/star-disabled.svg"
                                  width="49" height="47">
                         </div>
                         <div class="name">Ad****a</div>
@@ -455,81 +442,108 @@
             </div>
         </div>
         <div class="hourglass">
-            <img alt="Hourglass"
-                 class="hourglass_img lazy"
-                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-                 data-src="src/img/hourglass-min.png"
-                 data-retina="src/img/hourglass@x2-min.png"
-                 width="168"
-                 height="178"
-                 data-g5="light-speed-in-left">
+            <picture>
+                <source type="image/webp"
+                        srcset="src/img/webp/1x/hourglass.webp 1x, src/img/webp/2x/hourglass@2x.webp 2x">
+                <img
+                        alt="Hourglass"
+                        class="hourglass_img"
+                        width="168"
+                        height="178"
+                        src="src/img/1x/hourglass.png"
+                        srcset="src/img/1x/hourglass.png 1x, src/img/2x/hourglass@2x.png 2x"
+                />
+            </picture>
         </div>
     </section>
-    <section class="section-features lazy"
-             data-src="src/img/section-texture-bg-min.png"
-             data-retina="src/img/section-texture-bg@x2-min.png">
+    <section class="section-features">
         <div class="container">
-            <h2 class="text-center text-uppercase"
-                data-g5="bounce-in"
-            >Game Features</h2>
+            <h2 class="text-center text-uppercase">Game Features</h2>
             <div class="row">
                 <div class="col-lg-7">
                     <ul class="features-list">
-                        <li data-g5="light-speed-in-left">
+                        <li>
                             <span class="icon">
-                                <img alt="icon heart"
-                                     class="icon_img lazy"
-                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-                                     data-src="src/img/icon-heart-min.png" data-retina="src/img/icon-heart@x2-min.png"
-                                     width="59"
-                                     height="58">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="src/img/webp/1x/icon-heart.webp 1x, src/img/webp/2x/icon-heart@2x.webp 2x">
+                                    <img
+                                            alt="icon heart"
+                                            class="icon_img"
+                                            width="59"
+                                            height="58"
+                                            src="src/img/1x/icon-heart.png"
+                                            srcset="src/img/1x/icon-heart.png 1x, src/img/2x/icon-heart@2x.png 2x"
+                                    />
+                                </picture>
                             </span>
                             <span class="content">Play this new take on Mahjong Solitare and help a young girl find her lost parents.</span>
                         </li>
-                        <li data-g5="light-speed-in-left">
+                        <li>
                             <span class="icon">
-                                <img alt="icon babyu"
-                                     class="icon_img lazy"
-                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-                                     data-src="src/img/icon-babyu-min.png"
-                                     data-retina="src/img/icon-babyu@x2-min.png"
-                                     width="65"
-                                     height="58">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="src/img/webp/1x/icon-babyu.webp 1x, src/img/webp/2x/icon-babyu@2x.webp 2x">
+                                    <img
+                                            alt="icon babyu"
+                                            class="icon_img"
+                                            width="65"
+                                            height="58"
+                                            src="src/img/1x/icon-babyu.png"
+                                            srcset="src/img/1x/icon-babyu.png 1x, src/img/2x/icon-babyu@2x.png 2x"
+                                    />
+                                </picture>
                             </span>
                             <span class="content">Master thousands of immersive levels by matching over 1800 types of tiles in 43 different tilesets.</span>
                         </li>
-                        <li data-g5="light-speed-in-left">
+                        <li>
                             <span class="icon">
-                                <img alt="icon eye"
-                                     class="icon_img lazy"
-                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-                                     data-src="src/img/icon-eye-min.png"
-                                     data-retina="src/img/icon-eye@x2-min.png"
-                                     width="65"
-                                     height="51">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="src/img/webp/1x/icon-eye.webp 1x, src/img/webp/2x/icon-eye@2x.webp 2x">
+                                    <img
+                                            alt="icon eye"
+                                            class="icon_img"
+                                            width="65"
+                                            height="51"
+                                            src="src/img/1x/icon-eye.png"
+                                            srcset="src/img/1x/icon-eye.png 1x, src/img/2x/icon-eye@2x.png 2x"
+                                    />
+                                </picture>
                             </span>
                             <span class="content">Use the four groundbreaking powerups to earn collectibles and display them as you restore the family home.</span>
                         </li>
-                        <li data-g5="light-speed-in-left">
+                        <li>
                             <span class="icon">
-                                <img alt="icon rocket"
-                                     class="icon_img lazy"
-                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-                                     data-src="src/img/icon-rocket-min.png"
-                                     data-retina="src/img/icon-rocket@x2-min.png"
-                                     width="63"
-                                     height="67">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="src/img/webp/1x/icon-rocket.webp 1x, src/img/webp/2x/icon-rocket@2x.webp 2x">
+                                    <img
+                                            alt="icon rocket"
+                                            class="icon_img"
+                                            width="63"
+                                            height="67"
+                                            src="src/img/1x/icon-rocket.png"
+                                            srcset="src/img/1x/icon-rocket.png 1x, src/img/2x/icon-rocket@2x.png 2x"
+                                    />
+                                </picture>
                             </span>
                             <span class="content">Enjoy gorgeous graphics and rich sounds as you travel around the world.</span>
                         </li>
-                        <li data-g5="light-speed-in-left">
+                        <li>
                             <span class="icon">
-                                <img alt="icon clock" class="icon_img lazy"
-                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-                                     data-src="src/img/icon-clock-min.png"
-                                     data-retina="src/img/icon-clock@x2-min.png"
-                                     width="50"
-                                     height="51">
+                                <picture>
+                                    <source type="image/webp"
+                                            srcset="src/img/webp/1x/icon-clock.webp 1x, src/img/webp/2x/icon-clock@2x.webp 2x">
+                                    <img
+                                            alt="icon clock"
+                                            class="icon_img"
+                                            width="50"
+                                            height="51"
+                                            src="src/img/1x/icon-clock.png"
+                                            srcset="src/img/1x/icon-clock.png 1x, src/img/2x/icon-clock@2x.png 2x"
+                                    />
+                                </picture>
                             </span>
                             <span class="content">Enjoy regular free updates with new levels, tilesets and more.</span>
                         </li>
@@ -537,15 +551,18 @@
                 </div>
                 <div class="col-lg-5">
                     <span class="smiling-cat">
-                        <img alt="smiling cat"
-                             class="smiling-cat_img mx-auto lazy"
-                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
-                             data-src="src/img/smiling-cat-min.png"
-                             data-retina="src/img/smiling-cat@x2-min.png"
-                             width="269"
-                             height="430"
-                             data-g5="light-speed-in-right"
-                        >
+                        <picture>
+                            <source type="image/webp"
+                                    srcset="src/img/webp/1x/smiling-cat.webp 1x, src/img/webp/2x/smiling-cat@2x.webp 2x">
+                            <img
+                                    alt="smiling cat"
+                                    class="smiling-cat_img mx-auto"
+                                    width="269"
+                                    height="430"
+                                    src="src/img/1x/icon-clock.png"
+                                    srcset="src/img/1x/smiling-cat.png 1x, src/img/2x/smiling-cat@2x.png 2x"
+                            />
+                        </picture>
                     </span>
                 </div>
             </div>
@@ -553,18 +570,14 @@
     </section>
 
 </main>
-<footer class="mx-auto lazy" data-src="src/img/footer-bg-min.jpg"
-        data-retina="src/img/footer-bg@x2-min.jpg">
+<footer class="mx-auto" data-src="src/img/footer-bg.jpg"
+        data-retina="src/img/footer-bg@2x.jpg">
     <div class="container position-relative">
         <div class="row">
             <div class="col-md-6 col-lg-5 col-xl-4">
-                <h2 class="title"
-                    data-g5="bounce-in-up"
-                >Stay with us</h2>
-                <p data-g5="bounce-in-up">Mahjong Journey is constantly evolving. Become part of our community and
-                    follow us on:</p>
-                <ul class="social"
-                    data-g5="bounce-in">
+                <h2 class="title">Stay with us</h2>
+                <p>Mahjong Journey is constantly evolving. Become part of our community and follow us on:</p>
+                <ul class="social">
                     <li><a href="#" target="_blank" class="icon-facebook">&#xe801;</a></li>
                     <li><a href="#" target="_blank" class="icon-twitter">&#xe802;</a></li>
                     <li><a href="#" target="_blank" class="icon-youtube">&#xe803;</a></li>
@@ -587,8 +600,6 @@
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
         crossorigin="anonymous">
 </script>
-<script type="text/javascript"
-        src="src/js/custom/g5.js"></script>
 <script type="text/javascript"
         src="build/bundle.js">
 </script>

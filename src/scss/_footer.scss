@@ -1,7 +1,7 @@
 footer {
+  @include bgset(footer-bg);
   max-width: $main_width;
   @include rounding;
-  @include bgset;
   padding: 35px 0;
   color: #fff;
   position: relative;

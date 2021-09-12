@@ -5,10 +5,23 @@ $text-color: #393939;
 
 $main_width: 1440px;
 
-@mixin bgset {
+@mixin bgset($name, $ext: jpg) {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-image: url("../../src/img/1x/#{$name}.#{$ext}");
+  background-image: -webkit-image-set(url("../../src/img/webp/1x/#{$name}.webp") 1x);
+
+  @include media-breakpoint-up(md) {
+    background-image: image-set(
+                    url("../../src/img/1x/#{$name}.#{$ext}") 1x,
+                    url("../../src/img/2x/#{$name}@2x.#{$ext}") 2x
+    );
+    background-image: -webkit-image-set(
+                    url("../../src/img/webp/1x/#{$name}.webp") 1x,
+                    url("../../src/img/webp/2x/#{$name}@2x.webp") 2x
+    );
+  }
 }
 
 @mixin abs {
@@ -20,6 +33,7 @@ $main_width: 1440px;
   width: 100%;
   height: 100%;
 }
+
 @mixin rounding {
   border-top-right-radius: 40px;
   border-top-left-radius: 40px;

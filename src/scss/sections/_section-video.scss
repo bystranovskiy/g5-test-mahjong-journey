@@ -1,6 +1,6 @@
 .section-video {
+  @include bgset(section-texture-bg, png);
   @include rounding;
-  @include bgset;
   background-color: $main_bg;
   text-align: center;
   font-weight: 500;
@@ -21,7 +21,7 @@
 
   .wooden-stand {
     position: relative;
-    @include bgset;
+    @include bgset(wooden-stand, png);
 
     max-width: 270px;
     margin: 20px auto 72px;
