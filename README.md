@@ -11,10 +11,10 @@ The <b>goal</b> of the task is a layout landing page based on the mockup provide
 <b>Requirements:</b> use [Bootstrap grid](https://getbootstrap.com/docs/4.0/layout/grid/) for responsive page and create animations for elements.
 ## Implementation
 In development, I used [Webpack](https://webpack.js.org/) to work with the [SASS](https://sass-lang.com/) preprocessor, compile javascripts, minify styles and scripts, etc.
-I have included [Bootstrap v4.6.0] (https://getbootstrap.com/docs/4.6/getting-started/download/) from source files. From there, I used only the minimum of the necessary tools - grid, utilities, mixins.
-For the reviews slider, I used the jQuery plugin [Slick carousel] (https://kenwheeler.github.io/slick/).
-All images are pre-prepared and optimized, support for [WebP file format] (https://developers.google.com/speed/webp), as well as files of appropriate quality for Retina displays, is implemented. Lazy loading has been applied to images and videos to make perceived performance even faster.
-Animations are implemented using [GSAP] technology (https://greensock.com/gsap/).
+I have included [Bootstrap v4.6.0](https://getbootstrap.com/docs/4.6/getting-started/download/) from source files. From there, I used only the minimum of the necessary tools - grid, utilities, mixins.
+For the reviews slider, I used the jQuery plugin [Slick](https://kenwheeler.github.io/slick/) carousel.
+All images are pre-prepared and optimized, support for [WebP](https://developers.google.com/speed/webp) file format, as well as files of appropriate quality for Retina displays, is implemented. Lazy loading has been applied to images and videos to make perceived performance even faster.
+Animations are implemented using [GSAP](https://greensock.com/gsap/) technology.
 
 
 ## Get started
