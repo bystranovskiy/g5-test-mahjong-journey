@@ -1,8 +1,8 @@
-# G5 Entertainment - Frontend test
+# "Mahjong Journey Game" - G5 Entertainment Test task
+![](screenshot.jpg)
 
-*This is a [test task](https://www.dropbox.com/s/1nzetgsragl9y4q/Test%20Task_Front-end%20Developer.pdf) for the position of [Front-end Developer](https://djinni.co/jobs/297169-front-end-developer/) ([G5 EntertainmentAB](http://jobs.g5e.com/))
-
-It lives at ---> [Stage](https://bystranovskiy.github.io/g5-test-mahjong-journey/)*
+*This is a [test task](https://www.dropbox.com/s/1nzetgsragl9y4q/Test%20Task_Front-end%20Developer.pdf) for the position of [Front-end Developer](https://djinni.co/jobs/297169-front-end-developer/) ([G5 EntertainmentAB](http://jobs.g5e.com/)) <br/>
+It lives at ---> [<b>STAGE</b>](https://bystranovskiy.github.io/g5-test-mahjong-journey/)*
 
 ---
 
