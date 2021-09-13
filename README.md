@@ -16,8 +16,6 @@ For the reviews slider, I used the [jQuery](https://code.jquery.com/) plugin [Sl
 All images are pre-prepared and optimized, support for [WebP](https://developers.google.com/speed/webp) file format, as well as files of appropriate quality for [Retina displays](https://en.wikipedia.org/wiki/Retina_display), is implemented. [Lazy loading](https://github.com/aFarkas/lazysizes) has been applied to images and <b>youtube</b> video to make perceived performance even faster.
 Animations are implemented using [GSAP](https://greensock.com/gsap/) technology (<b>Parallax</b> effect, Effective appearance of elements on <b>ScrollTrigger</b>, other).
 
-
-
 ## Get started
 
 Install the dependencies...
